@@ -1,15 +1,17 @@
 const drawBoard = () => {
-    const pixelCount = 20;
-    const boardXY = 500;
+    let pixelCount = document.getElementById("pixelCount").value;
+    console.log(pixelCount)
+    const boardXY = 512;
     const pixelXY = boardXY / pixelCount;
     
     const board = document.getElementById("board"); 
+    board.innerHTML = "";
 
     for (let i = 0; i < pixelCount * pixelCount; i++) {
         const pixel = document.createElement("div");    
         pixel.classList.add("pixel");
         pixel.style.width = `${pixelXY - 1}px`
-        pixel.style.height = `${pixelXY - 1}px`
+        pixel.style.height = `${pixelXY - 1 }px`
         pixel.addEventListener("mouseover", draw);
         pixel.id = `pixel${i}`
         board.appendChild(pixel);
