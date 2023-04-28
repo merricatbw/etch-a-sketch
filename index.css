@@ -1,0 +1,16 @@
+.pixel {
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 0.5px;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: black;
+}
