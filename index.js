@@ -1,6 +1,5 @@
 const drawBoard = () => {
     let pixelCount = document.getElementById("pixelCount").value;
-    console.log(pixelCount)
     const boardXY = 512;
     const pixelXY = boardXY / pixelCount;
     

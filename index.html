@@ -11,7 +11,8 @@
     <h1>Etch-a-sketch</h1>
     <div class="container">
         <div class="controls">
-            <input type="range" min="4" step="4" max="50" value="20" class="slider" id="pixelCount" onChange="drawBoard()"/>
+            <input type="range" min="4" step="4" max="48" value="20" class="slider" id="pixelCount" onChange="drawBoard()"/>
+            <button onClick="drawBoard">RESET</button>
         </div>
         <div class="board" id="board">
         </div> 
